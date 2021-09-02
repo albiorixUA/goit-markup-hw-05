@@ -26,7 +26,7 @@
         <a href="" class="logo"> <span class="web">Web</span>Studio</a>
         <nav>
           <ul class="site-nav">
-            <li><a href="" class="link current">Студия</a></li>
+            <li class="current-list "><a href="" class="link current main">Студия</a></li>
             <li><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li><a href="" class="link">Контакты</a></li>
           </ul>
@@ -51,8 +51,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button studya">Заказать услугу</button>
+          <button type="button" class="button studya" data-modal-open>Заказать услугу</button>
         </div>
+        
       </section>
       <section class="work-list">
         <div class="container">
@@ -122,6 +123,7 @@
                 width="370"
                 height="294"
               />
+              <p3 class="activity-description">Десктопные приложения</p3>
             </li>
             <li class="list">
               <img
@@ -130,6 +132,7 @@
                 width="370"
                 height="294"
               />
+              <h3 class="activity-description">Мобильные приложения</h3>
             </li>
             <li class="list">
               <img
@@ -138,6 +141,7 @@
                 width="370"
                 height="294"
               />
+              <h3 class="activity-description">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -416,5 +420,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <div class="modal-close" data-modal-close>
+              <svg class="modal-close-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+            </svg>
+            </div>
+          </div>
+        </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
