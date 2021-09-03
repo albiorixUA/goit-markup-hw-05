@@ -492,6 +492,7 @@ img {
 /* Оверлей на карточках сторінки Портфоліо" */
 .overlay {
   position: relative;
+  overflow: hidden;
 }
 
 .text-overlay {
@@ -501,7 +502,6 @@ img {
   height: 100%;
   position: absolute;
   bottom: 0;
-  opacity: 0;
 
   font-weight: 400;
   font-size: 18px;
@@ -528,7 +528,6 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   transform: translateY(0);
-  opacity: 1;
 }
 
 .portfolio-list .description {
